@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "240303336024",
+    "project_id": "fluttergitissuestracker",
+    "storage_bucket": "fluttergitissuestracker.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240303336024:android:f41119e662a9520366782d",
+        "android_client_info": {
+          "package_name": "com.asif.llc.flutter_issues_tracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240303336024-4jm1oltm5t01sg6cq979i2kv5l7v5alb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS554jiIckar9fyG5iW5NgviVV6c83-7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240303336024-4jm1oltm5t01sg6cq979i2kv5l7v5alb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
