@@ -6,12 +6,12 @@ import '../blocs/flutter_issues_bloc.dart';
 import '../models/flutter_issues_model.dart';
 import 'issues_detail.dart';
 
-class MovieListNew extends StatefulWidget {
+class FlutterIssuesList extends StatefulWidget {
   @override
-  State<MovieListNew> createState() => _MovieListNewState();
+  State<FlutterIssuesList> createState() => _FlutterIssuesListState();
 }
 
-class _MovieListNewState extends State<MovieListNew> {
+class _FlutterIssuesListState extends State<FlutterIssuesList> {
   int page = 1;
   Color mainColor = const Color(0xff3C3261);
   List<FlutterIssuesModel> _searchIssues = [];

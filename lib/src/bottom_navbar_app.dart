@@ -44,7 +44,7 @@ class _BottomNavBarAppState extends State<BottomNavBarApp> {
                 builder: (BuildContext context, AsyncSnapshot<NavBarItem> snapshot) {
                   switch (snapshot.data!) {
                     case NavBarItem.ISSUES:
-                      return MovieListNew();
+                      return FlutterIssuesList();
                     case NavBarItem.DEVPROFILES:
                       return FlutterIssuesGrid();
                     case NavBarItem.SETTINGS:
