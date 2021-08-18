@@ -18,6 +18,8 @@ class FlutterIssuesBloc {
   fetchAllFlutterIssues(int page) async {
     await Future.delayed(Duration(seconds: 2));
     List<FlutterIssuesModel> itemModel = await _flutterRepository.fetchFlutterIssues(page);
+    final ids = itemModel.map((e) => e.id).toSet();
+    itemModel.retainWhere((x) => ids.remove(x.id));
     _issues.addAll(itemModel);
     _issuesController.sink.add(_issues);
   }

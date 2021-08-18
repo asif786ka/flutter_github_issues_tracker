@@ -70,6 +70,7 @@ class _FlutterIssuesGridState extends State<FlutterIssuesGrid> {
     _flutterIssues = snapshot.data!;
     //print("Github list size:" + _flutterIssues.length.toString());
     return new GridView.builder(
+      physics: ScrollPhysics(),
       itemCount: _flutterIssues.length + 1,
       controller: _controller,
       itemBuilder: (context, index) {
@@ -109,7 +110,6 @@ class _FlutterIssuesGridState extends State<FlutterIssuesGrid> {
                         Padding(
                           padding: const EdgeInsets.only(
                               left: 2.0, right: 2.0, top: 2.0, bottom: 2.0),
-                          child: Flexible(
                             child: Text(
                               _flutterIssues[index].user.login,
                               overflow: TextOverflow.ellipsis,
@@ -118,7 +118,6 @@ class _FlutterIssuesGridState extends State<FlutterIssuesGrid> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
-                          ),
                         )
                       ],
                     ),
